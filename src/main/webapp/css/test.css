@@ -1,0 +1,148 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.gallery {
+	margin: 5px;
+	float: left;
+	width: 180px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+/* Style the header */
+header {
+	background-color: DarkSlateGray;
+	padding: 5px;
+	text-align: left;
+	font-size: 25px;
+	color: white;
+}
+
+/* Container for flexboxes */
+section {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
+.button2 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
+.button3 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
+.button4 {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
+/* Style the navigation menu */
+nav {
+	float: left;
+	background: Gainsboro;
+	text-align: centre;
+	padding: 20px;
+	width: 15%;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+	padding: 3;
+}
+
+/* Style the content */
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	background-color: #f1f1f5;
+	padding: 150px;
+}
+
+/* Style the footer */
+footer {
+	background-color: DarkSlateGray;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media ( max-width : 600px) {
+	section {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: Gainsboro;
+	position: absolute;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}

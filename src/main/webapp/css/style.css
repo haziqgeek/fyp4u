@@ -1,0 +1,64 @@
+body {
+	background-color:DarkSlateGray;
+}
+img {
+	display: block;
+	border-radius: 50%;
+}
+
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+/* Style the header */
+header {
+	background-color: DarkSlateGray;
+	font-size: 25px;
+	color: white;
+}
+
+/* Style the navigation menu */
+nav {
+	background: Gainsboro;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+}
+
+/* Style the content */
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media ( max-width : 600px) {
+	
+}
+
+ul {
+	list-style-type: none;
+	background-color: Gainsboro;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+.content {
+	background-color: #f1f1f5;
+}
